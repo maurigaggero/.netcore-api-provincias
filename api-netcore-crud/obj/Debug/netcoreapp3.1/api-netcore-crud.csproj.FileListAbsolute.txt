@@ -55,3 +55,4 @@ C:\Users\Mauricio Gaggero\source\repos\api-netcore-crud\api-netcore-crud\bin\Deb
 C:\Users\Mauricio Gaggero\source\repos\api-netcore-crud\api-netcore-crud\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Mauricio Gaggero\source\repos\api-netcore-crud\api-netcore-crud\obj\Debug\netcoreapp3.1\api-netcore-crud.csproj.CoreCompileInputs.cache
 C:\Users\Mauricio Gaggero\source\repos\api-netcore-crud\api-netcore-crud\obj\Debug\netcoreapp3.1\api-netcore-crud.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mauricio Gaggero\source\repos\api-netcore-crud\api-netcore-crud\obj\Debug\netcoreapp3.1\api-netcore-crud.csprojAssemblyReference.cache
