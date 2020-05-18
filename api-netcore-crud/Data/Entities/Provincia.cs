@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace api_netcore_crud.Data.Entities
 {
-    public class Pais
+    public class Provincia
     {
         public int Id { get; set; }
         [Required]
-        public string CodPais { get; set; }
+        public string CodProv { get; set; }
         [Required]
-        public string NomPais { get; set; }
+        public string NomProv { get; set; }
+        [Required]
+        public int PaisId { get; set; }
+
+        public Pais Pais { get; set; }
     }
 }

@@ -15,5 +15,7 @@ namespace api_netcore_crud.Data
         }
 
         public DbSet<Pais> Paises { get; set; }
+
+        public DbSet<Provincia> Provincias { get; set; }
     }
 }
