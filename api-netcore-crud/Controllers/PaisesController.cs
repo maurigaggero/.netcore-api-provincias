@@ -23,13 +23,13 @@ namespace ApiPrueba.WebAPi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Pais>> Get()
         {
-            return context.Paises.ToList();
+            return context.Paises.Include(p => p.Provincias).ToList();
         }
 
         [HttpGet("{id}", Name = "ObtenerPaisPorId")]
         public ActionResult<Pais> Get(int id)
         {
-            var pais = context.Paises.FirstOrDefault(p => p.Id == id);
+            var pais = context.Paises.Include(p => p.Provincias).FirstOrDefault(p => p.Id == id);
             if (pais == null)
             {
                 return NotFound();

@@ -1,9 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>api_netcore_crud</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200526152350_paisId.cs" />
+    <Compile Remove="Migrations\20200526152350_paisId.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
