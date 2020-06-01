@@ -26,6 +26,7 @@ namespace api_netcore_crud.Controllers
             return context.Provincias.Include(p => p.Pais).ToList();
         }
 
+        //   /api/provincias/ProvById/5
         [HttpGet("ProvById/{id}", Name = "ProvById")]
         public ActionResult<Provincia> GetProvById(int id)
         {

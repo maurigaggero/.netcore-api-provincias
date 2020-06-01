@@ -72,14 +72,22 @@ namespace ApiPrueba.WebAPi.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Pais> Delete(int id)
         {
-            var pais = context.Paises.FirstOrDefault(p => p.Id == id);
-            if (pais == null)
+            try
             {
-                return NotFound();
+                var pais = context.Paises.FirstOrDefault(p => p.Id == id);
+                if (pais == null)
+                {
+                    return NotFound();
+                }
+
+                context.Paises.Remove(pais);
+                context.SaveChanges();
+                return Ok();
             }
-            context.Paises.Remove(pais);
-            context.SaveChanges();
-            return Ok();
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
         }
     }
 }
